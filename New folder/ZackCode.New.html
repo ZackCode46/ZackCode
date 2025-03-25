@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="./Styles.css">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website pribadi Fazila Zaki Ahmad dengan tema game adventure 2D">
+    <meta name="keywords" content="Fazila Zaki Ahmad, Portfolio, Game Style Website, Web Developer">
+    <meta name="author" content="Fazila Zaki Ahmad">
+    <title>Fazila Zaki Ahmad - Adventure Profile</title>
+    
+    <!-- Link CSS terpisah -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet.js untuk peta interaktif -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+
+    <!-- Container utama -->
+    <div class="game-container">
+        <!-- Header -->
+        <header>
+            <h1 class="title">🌍 Fazila Zaki's Adventure Profile 🚀</h1>
+        </header>
+
+        <!-- Karakter bergerak -->
+        <div class="character">
+            <img src="assets/images/nama-gambar.png" alt="Character">
+
+        </div>
+
+        <!-- Navigasi -->
+        <nav class="menu">
+            <button onclick="showSection('about')">🏡 Home</button>
+            <button onclick="showSection('skills')">⚔️ Skills</button>
+            <button onclick="showSection('contact')">📞 Contact</button>
+        </nav>
+
+        <!-- About Me -->
+        <section id="about">
+            <img src="profile.jpg" alt="Fazila Zaki Ahmad" class="profile-img">
+            <h2>About Me</h2>
+            <p>Hi! Saya <b>Fazila Zaki Ahmad</b>, lulusan <b>Gunadarma University</b> dengan jurusan <b>Informatics Engineering</b> (GPA: 3.60). Saya memiliki pengalaman di bidang IT, khususnya dalam pengembangan web dan sistem tertanam.</p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>⚔️ Skills & Experience</h2>
+            <ul>
+                <li>💻 Web Development</li>
+                <li>🔧 Embedded Systems</li>
+                <li>🔌 Network & Electrical Systems</li>
+                <li>🎙 Public Speaking</li>
+            </ul>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>📞 Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p>Or contact via WhatsApp: <a href="https://wa.me/6289653720025" target="_blank">0896-5372-0025</a></p>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map-section">
+            <h2>📍 My Location</h2>
+            <div id="map"></div>
+            <button onclick="getLocation()">Find My Location</button>
+        </section>
+
+        <!-- CV Download -->
+        <div class="cv-button">
+            <a href="Putih Minimalis CV Kerja Start Up Teknologi Resume.jpg" target="_blank">📄 View CV</a>
+        </div>
+
+        <!-- Social Media -->
+        <footer>
+            <p>Follow me: 
+                <a href="https://www.instagram.com/fazilazakiahmd" target="_blank">Instagram</a> | 
+                <a href="https://www.linkedin.com/in/fazila-zaki-1471b2335" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Script JavaScript terpisah -->
+    <script src="script.js"></script>
+
+</body>
+</html>
